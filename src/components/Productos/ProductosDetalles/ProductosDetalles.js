@@ -15,7 +15,6 @@ export const ProductosDetalles = () => {
   let item = 0;
 
   useEffect(() => {
-    // console.log('re render' , params.id);
     item=0;
     productos.forEach(producto =>{
       if(producto.id === parseInt(params.id)) {
@@ -24,8 +23,6 @@ export const ProductosDetalles = () => {
       }
     })
   },[params.id, productos]);
-
-//   console.log(url);
 
   useEffect(() => {
     const values = `${detalle.img1} ${url}${detalle.img2}`;

@@ -9,13 +9,13 @@ import Dataprovider from "./context/Dataprovider";
 function App() {
   return (
       <Dataprovider>
-        <div>
+        <div className="App">
           <BrowserRouter>
             <Header/>
             <Carrito/>
             <Paginas/>
           </BrowserRouter>
-          </div>
+        </div>
       </Dataprovider>
   );
 }
