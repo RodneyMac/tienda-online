@@ -16,7 +16,7 @@ export const ProductoItem = ({
   const addCarrito = value.addCarrito;
 
   return (
-    <div className="producto" key={id}>
+    <div className="producto-item-container" key={id}>
       <Link to={`/producto/${id}`}>
         <div className='producto-img'>
           <img src={image} alt={title}/>
@@ -28,8 +28,8 @@ export const ProductoItem = ({
         <p className='price'>$ {price}</p>
       </div>
       <div className='buttom'>
-        <button className='btn' onClick={() => addCarrito(id)}>Añadir al carrito</button>
-        <div>
+        <button className='btn btn-add' onClick={() => addCarrito(id)}>Añadir al carrito</button>
+        <div className='btn-vista'>
           <a href='#' className='btn'>Vista</a>
         </div>
       </div>

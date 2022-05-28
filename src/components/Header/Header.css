@@ -9,6 +9,7 @@
     width: 100%;
     padding: 20px;
     background-color: gray;
+    position: fixed;
 }
 
 .content {
@@ -39,4 +40,5 @@
     width: 24px;
     height: 24px;
     cursor: pointer;
+    gap: 2px;
 }

@@ -1,6 +1,5 @@
 import React, {useState, useEffect, useContext } from 'react';
 import "../ProductosDetalles/ProductosDetalles.css";
-import "../ProductosDetalles/ProductosDetalles.css";
 import { DataContext } from '../../../context/Dataprovider';
 import { useParams } from 'react-router-dom';
 import {ProductoItem} from "../ProductoItem/ProductoItem";

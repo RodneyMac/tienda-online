@@ -9,9 +9,9 @@ const ProductosLista = () => {
   // console.log(productos);
 
   return (
-    <>
-      <h1 className='title'>PRODUCTOS</h1>
-      <div className='productos'>
+    <div className='productos-lista-container'>
+      <h1 className='productos-lista-title'>PRODUCTOS</h1>
+      <div className='productos-lista'>
         {productos.map(producto => (
           <ProductoItem key={producto.id}
             id = {producto.id}
@@ -23,7 +23,7 @@ const ProductosLista = () => {
           />
         ))}
       </div>
-    </>
+    </div>
   )
 }
 

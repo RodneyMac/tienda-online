@@ -2,3 +2,31 @@
     display: flex;
     justify-content: center;
 }
+
+.carrito-center {
+    margin-top: 100px;
+}
+
+.carrito-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.btn-footer {
+    cursor: pointer;
+    padding: 6px;
+    background-color: aqua;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+box-icon {
+    cursor: pointer;
+}
