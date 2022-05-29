@@ -1,5 +1,4 @@
 import React from 'react';
-import "../Carrito/Carrito.css";
 import { useContext } from 'react';
 import { DataContext } from '../../context/Dataprovider';
 
@@ -65,19 +64,18 @@ const Carrito = () => {
                             <p className='price'>$ {producto.price}</p>
                         </div>
                         <div>
-                            <box-icon name="up-arrow" type="solid" onClick={() => suma(producto.id)}></box-icon>
+                            <box-icon name="up-arrow" type="solid" onClick={() => suma(producto.id)} title="Aumentar"></box-icon>
                             <p className='cantidad'>{producto.cantidad}</p>
-                            <box-icon name="down-arrow" type="solid" onClick={() => resta(producto.id)}></box-icon>
+                            <box-icon name="down-arrow" type="solid" onClick={() => resta(producto.id)} title="Disminuir"></box-icon>
                         </div>
                         <div className='remove-item' onClick={() => removeProducto(producto.id)}>
-                            <box-icon name="trash"></box-icon>
+                            <box-icon name="trash" title="Borrar"></box-icon>
                         </div>
                     </div>))}</>}
             </div>
 
             <div className='carrito-footer'>
                 <h3>Total: $ {total}</h3>
-                <button className='btn btn-footer'>Payment</button>
             </div>
         </div>
     	</div>

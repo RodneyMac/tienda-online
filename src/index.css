@@ -18,7 +18,6 @@ code {
   width: 100%;
   min-height: 100vh;
   margin: 0 auto;
-  box-shadow: 0 5px 6px #08a05ca4;
   box-sizing: border-box;
 }
 
@@ -28,6 +27,7 @@ a {
   color: black;
   text-decoration: none;
   text-transform: uppercase;
+  transition: 0.5s;
 }
 
 a:hover {
@@ -62,23 +62,6 @@ header .cart box-icon {
   height: 45px;
 }
 
-header .cart span {
-  position: absolute;
-  top: -1rem;
-  right: -1.5rem;
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  padding: 0rem;
-  font-size: 1.5rem;
-  font-weight: 700;
-  background-color: crimson;
-}
-
 /* -------------------- INICIO ------------------------- */
 
 .inicio {
@@ -89,29 +72,10 @@ header .cart span {
 
 .inicio h1 {
   font-size: 2rem;
-  color: #08a05c;
-}
-
-.inicio img {
-  width: 100%;
+  color: rgb(0, 109, 172);
 }
 
 /* ------------------ PRODUCTOS ---------------------------*/
-
-.title {
-  font-size: 2rem;
-  padding: 10rem 0 0 0;
-  color: #08a05c;
-}
-
-.productos {
-  padding: 5rem 1rem;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
-  gap: 3rem 2rem;
-  box-sizing: border-box;
-}
 
 .producto {
   display: flex;
@@ -172,20 +136,17 @@ header .cart span {
 }
 
 .buttom button {
-  background-color: #3033d3;
+  background-color: #2022b8;
   max-width: 250px;
   width: 100%;
   font-size: 1.5rem;
   color: white;
   font-weight: 600;
+  transition: all 0.5s ease;
 }
 
-.buttom div {
-  background-color: #08a05c;
-  display: grid;
-  align-items: center;
-  text-align: center;
-  border-radius: 5px;
+.buttom button:hover {
+  background-color: #292dfc;
 }
 
 .buttom div a {
@@ -254,7 +215,7 @@ header .cart span {
 }
 
 .carrito-close box-icon:hover {
-  fill: crimson;
+  fill: brown;
 }
 
 .carrito-center {
@@ -267,7 +228,7 @@ header .cart span {
   grid-template-columns: 1fr 2fr 1fr 1fr;
   width: 80%;
   margin: 2rem auto;
-  box-shadow: 0 1px 10px #08a05c;
+  box-shadow: 0 1px 10px #0f5335;
   border-radius: 5px;
 }
 
@@ -291,11 +252,11 @@ header .cart span {
 }
 
 .carrito-item box-icon {
-  fill: #08a05c;
+  fill: #0f5335;
   width: 40px;
   height: 40px;
   cursor: pointer;
-  margin-top: .3rem;
+  margin-top: .9rem;
 }
 
 .carrito-item .cantidad {
@@ -306,8 +267,8 @@ header .cart span {
 .carrito-item .remove-item box-icon {
   width: 60px;
   height: 80px;
-  fill: crimson;
-  margin-top: 2rem;
+  fill: brown;
+  margin-top: 4rem;
 }
 
 .carrito-footer {
@@ -320,33 +281,6 @@ header .cart span {
   font-weight: 700;
   letter-spacing: 1px;
 }
-
-.carrito-footer .btn {
-  display: inline-block;
-  padding: .3rem 1rem;
-  font-size: 1.2rem;
-  background-color: #08a05c;
-  border: 0;
-  outline: 0;
-  cursor: pointer;
-}
-
-.carrito-footer .btn {
-  display: inline;
-  padding: .3rem 1rem;
-  font-size: 1.2rem;
-  background-color: #08a05c;
-  border: 0;
-  outline: 0;
-  cursor: pointer;
-}
-
-.carrito-footer .btn:hover {
-  background-color: #0f5c39;
-  color: white;
-} 
-
-/**/
 
 /*--------------DETALLES --------------*/
 
@@ -407,7 +341,7 @@ header .cart span {
 }
 
 .detalles .grid .tamano {
-  background-color:#f1365b;
+  background-color: brown;
   display: flex;
 }
 
@@ -415,7 +349,7 @@ header .cart span {
   border: none;
   outline: 0;
   font-size: 2rem;
-  background-color:#f1365b;
+  background-color: brown;
   color: white;
   cursor: pointer;
 }

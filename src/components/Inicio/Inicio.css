@@ -3,3 +3,9 @@
     justify-content: center;
     gap: 80px;
 }
+
+@media (max-width: 500px) {
+    .inicio-container {
+        gap: 50px;
+    }
+}

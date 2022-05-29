@@ -26,7 +26,7 @@ const Header = () => {
         </div>
         <div className='cart' onClick={toggleMenu}>
           <div className="cart" title='Carrito'><FaShoppingCart/></div>
-          <span className='item-total'>{carrito.length}</span>
+          <span className='item-total' title='Total agregado'>{carrito.length}</span>
         </div>
       </div>
     </div>

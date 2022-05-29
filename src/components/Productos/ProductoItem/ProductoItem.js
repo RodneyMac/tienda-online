@@ -5,11 +5,11 @@ import { DataContext } from '../../../context/Dataprovider';
 import {Link} from "react-router-dom";
 
 export const ProductoItem = ({
-  id, 
-  title, 
-  price,
+  id,
   image,
-  category
+  name, 
+  type,
+  price,
 }) => {
   
   const value = useContext(DataContext);
@@ -19,19 +19,16 @@ export const ProductoItem = ({
     <div className="producto-item-container" key={id}>
       <Link to={`/producto/${id}`}>
         <div className='producto-img'>
-          <img src={image} alt={title}/>
+          <img src={image} alt={name}/>
         </div>
       </Link>
       <div className='producto-footer'>
-        <h1>{title}</h1>
-        <p>{category}</p>
-        <p className='price'>$ {price}</p>
+        <h1><strong className='nombre'>Nombre:</strong> {name}</h1>
+        <p><strong className='tipo'>Tipo: </strong>{type}</p>
+        <p className='price'><strong className='precio'>Precio </strong>$ {price}</p>  
       </div>
       <div className='buttom btn-p'>
         <button className='btn btn-add' onClick={() => addCarrito(id)}>Añadir al carrito</button>
-        <div className='btn btn-vista'>
-          <a href='#' className='btn'>Vista</a>
-        </div>
       </div>
     </div>
   )

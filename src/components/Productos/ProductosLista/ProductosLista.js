@@ -6,7 +6,6 @@ import {ProductoItem} from "../ProductoItem/ProductoItem";
 const ProductosLista = () => {
   const value = useContext(DataContext);
   const [productos] = value.productos;
-  // console.log(productos);
 
   return (
     <div className='productos-lista-container'>
@@ -15,10 +14,10 @@ const ProductosLista = () => {
         {productos.map(producto => (
           <ProductoItem key={producto.id}
             id = {producto.id}
-            title = {producto.title}
-            price = {producto.price}
             image = {producto.image}
-            category = {producto.category}
+            name = {producto.name}
+            type = {producto.type}
+            price = {producto.price}
             cantidad = {producto.cantidad}
           />
         ))}

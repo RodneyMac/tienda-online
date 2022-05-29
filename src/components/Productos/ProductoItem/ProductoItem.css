@@ -1,9 +1,12 @@
 .producto-item-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     margin: 100px 100px;
+}
+
+.nombre, .tipo, .precio {
+    color: rgb(20, 80, 129);
 }
 
 .btn-add {
