@@ -22,11 +22,6 @@ export const ProductosDetalles = () => {
     })
   },[params.id, productos]);
 
-  useEffect(() => {
-    const values = `${detalle.img1} ${url}${detalle.img2}`;
-    setImages(values) 
-  }, [url, params.id]);
-
   if(detalle.length < 1) return null;
 
   return (

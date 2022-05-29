@@ -58,7 +58,7 @@ const Carrito = () => {
                 {carrito.length === 0 ? <h2 style={{textAlign: "center", fontSize: "3rem"}}>Carrito vacío</h2> :
                 <>{carrito.map((producto) => (
                     <div className='carrito-item' key={producto.id}>
-                        <img src={producto.image} alt={producto.title}/>
+                        <img src={producto.image} alt={producto.name}/>
                         <div>
                             <h3>{producto.title}</h3>
                             <p className='price'>$ {producto.price}</p>
