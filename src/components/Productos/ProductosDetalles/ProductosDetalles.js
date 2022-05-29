@@ -34,8 +34,8 @@ export const ProductosDetalles = () => {
       <h2 className="relacionados">Productos relacionados</h2>
       <div className="productos">
         {
-          productos.map((producto)=> {
-            if((item < 6)&&(detalle.category === producto.category)) {
+          productos.map((producto) => {
+            if((item < 6)&&(detalle.type === producto.type)) {
               item++;
             return <ProductoItem 
                   key={producto.id}
